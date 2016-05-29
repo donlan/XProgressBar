@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextProgressBar">
+        <attr name="progress_right_height" format="dimension" />
+        <attr name="progress_right_color" format="color" />
+        <attr name="progress_left_height" format="dimension" />
+        <attr name="progress_left_color" format="color" />
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+        <attr name="progress_text_offset" format="dimension"/>
+        <attr name="progress_circle_radius" format="dimension"/>
+        <attr name="progress_circle_color" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="CircleProgressBar">
+        <attr name="circle_progress_circle_width" format="dimension"/>
+        <attr name="circle_progress_radius" format="dimension" />
+        <attr name="circle_progress_reached_color" format="color" />
+        <attr name="circle_progress_unreached_color" format="color" />
+        <attr name="circle_progress_text_size" format="dimension" />
+        <attr name="circle_progress_text_color" format="color" />
+    </declare-styleable>
+</resources>

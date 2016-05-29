@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:doo="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="dong.lan.xprogressbar.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <dong.lan.xprogressbar.view.TextProgressBar
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:max="100"
+            android:progress="30"
+            doo:progress_circle_radius="16dp"
+            doo:progress_left_color="@color/colorAccent"
+            doo:progress_left_height="3dp"
+            doo:progress_right_color="@color/colorPrimary"
+            doo:progress_text_color="@android:color/white"
+            doo:progress_text_offset="0dp"
+            doo:progress_text_size="12sp" />
+
+        <dong.lan.xprogressbar.view.TextProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:max="100"
+            android:progress="0"
+            doo:progress_circle_color="@color/colorPrimary"
+            doo:progress_circle_radius="16dp"
+            doo:progress_left_color="@color/colorAccent"
+            doo:progress_right_color="@color/colorPrimary"
+            doo:progress_text_color="@android:color/white"
+            doo:progress_text_offset="0dp"
+            doo:progress_text_size="12sp" />
+
+        <dong.lan.xprogressbar.view.TextProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:max="100"
+            android:progress="100"
+            doo:progress_circle_radius="16dp"
+            doo:progress_text_offset="0dp"
+            doo:progress_text_size="12sp" />
+
+        <dong.lan.xprogressbar.view.CircleProgressBar
+            android:id="@+id/circle_pro"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:max="100"
+            android:progress="1"
+            doo:circle_progress_circle_width="6dp"
+            doo:circle_progress_radius="150dp"
+            doo:circle_progress_text_color="@color/colorPrimary"
+            doo:circle_progress_text_size="30sp" />
+
+        <dong.lan.xprogressbar.view.CircleProgressBar
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:max="100"
+            android:progress="30"
+            doo:circle_progress_circle_width="4dp"
+            doo:circle_progress_radius="150dp"
+            doo:circle_progress_text_color="@color/colorPrimary"
+            doo:circle_progress_text_size="20sp" />
+
+        <dong.lan.xprogressbar.view.CircleProgressBar
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:max="100"
+            android:progress="80"
+            doo:circle_progress_circle_width="4dp"
+            doo:circle_progress_radius="150dp"
+            doo:circle_progress_reached_color="@color/colorPrimaryDark"
+            doo:circle_progress_text_color="@color/colorAccent"
+            doo:circle_progress_text_size="20sp" />
+    </LinearLayout>
+</ScrollView>
